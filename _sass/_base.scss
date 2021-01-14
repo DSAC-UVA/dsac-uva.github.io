@@ -2,6 +2,10 @@ html,
 body {
     height: 100%;
     width: 100%;
+    @include scrollbars(10px, slategray, #222222);
+}
+.custom-area {
+    @include scrollbars(0.5em, slategray);
 }
 
 body {
@@ -49,6 +53,16 @@ p {
 .bg-dark {
     background-color: $theme-dark;
     color: white;
+}
+
+.bg-alt-1 {
+    background-color: #c955ff70;
+    // background-color: rgb(253, 140, 4);
+}
+
+.bg-alt-2 {
+    background-color: $theme-black;
+    // background-color: rgb(0, 164, 204);
 }
 
 .text-faded {
