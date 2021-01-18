@@ -27,4 +27,4 @@ Website for Data Science Analytics Club at the University of Virginia!
 
 ## To-do
 
-[ ] Fix menu styling on mobile screens
+[x] Fix menu styling on mobile screens
