@@ -3,22 +3,9 @@
 <body style="background-color: #222">
 	{% include head.html %} {% include nav.html %} {% include banner.html%}
 
-	<!-- sections -->
-	<div id="#about-us">
-		{% include about-us.html%} {% include scripts.html %}
-	</div>
+    {{ content }}
 
-	<div id="#events">
-		{% include events.html %}
-	</div>
-
-	<div id="#membership">
-		{% include membership.html %}
-	</div>
-
-	<div id="#leadership">
-		{% include leadership.html %}
-	</div>
+    {% include scripts.html %}
 </body>
 
 {% include footer.html %}
