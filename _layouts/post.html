@@ -1,14 +1,17 @@
 ---
-layout: root
+layout: feed
 ---
-<section>
-  <div id="post">
-    <div class="title">
-        <h1> {{ page.title }} </h1>
-        <h2> posted on {{ page.date | date_to_string: "ordinal", "US" }} </h2>
-    </div>
+
+<section class="container post">
+  <div class="block">
+    <h1> {{ page.title }} </h1>
+    <p> posted on {{ page.date | date_to_string: "ordinal", "US" }} </p>
+    <hr />
     <div class="body">
-        {{ content }}
+      {{ content }}
     </div>
   </div>
 </section>
+<p class="container text-center" style="padding: 30px;">
+  <a href="{{ site.baseurl }}/feed" class="btn btn-default btn-xl">Back to blog</a>
+</p>
